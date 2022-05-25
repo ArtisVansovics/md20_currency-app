@@ -1,0 +1,22 @@
+.box {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-content: space-evenly;
+  width: 100%;
+  border-radius: 5px;
+  border: #8F9FA6 2px solid;
+  color: #488C18;
+  background-color: #182614;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.cell {
+  padding: 5px 10px;
+  width: 100%;
+}
+
+.left {
+  width: 100%;
+  border-right: #D9A282 2px solid;
+}
