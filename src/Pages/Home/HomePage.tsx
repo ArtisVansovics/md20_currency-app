@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from '../../components/Button/Button';
 
 const HomePage = () => {
   const a = 0;
