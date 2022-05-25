@@ -1,0 +1,22 @@
+.card {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #254159;
+  color: #F2F0D5;
+  padding: 15px 10px;
+  border-radius: 20px;
+  box-shadow: #8F9FA6 1px 1px 6px 5px;
+  text-align: center;
+}
+
+.title {
+  font-size: 20px;
+}
+
+.code {
+font-size: 18px;
+}
