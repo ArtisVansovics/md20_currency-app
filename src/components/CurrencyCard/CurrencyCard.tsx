@@ -17,7 +17,7 @@ const CurrencyCard = ({ code, name }: CurrencyCardProps) => {
         {name}
       </h2>
       <h3 className={styles.code}>
-        {`Code: ${code}`}
+        {`Code: ${code.toUpperCase()}`}
       </h3>
       <Button
         title="See Rates"

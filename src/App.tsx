@@ -26,7 +26,7 @@ const App = () => (
         element={<HomePage />}
       />
       <Route
-        path="/currencies/:name"
+        path="/currencies/:code"
         element={<CurrencyPage />}
       />
       <Route
