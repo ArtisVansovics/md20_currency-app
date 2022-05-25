@@ -7,11 +7,14 @@ export const currencyApi = createApi({
     getAllCurrencies: builder.query<any, void>({
       query: () => 'currencies.json',
     }),
+    getCurrencyByCode: builder.query<any, string>({
+      query: (code) => `currencies/${code}.json`,
+    }),
   }),
 });
 
 export const {
-  useGetAllCurrenciesQuery,
+  useGetAllCurrenciesQuery, useGetCurrencyByCodeQuery,
 } = currencyApi;
 
 export default currencyApi;
