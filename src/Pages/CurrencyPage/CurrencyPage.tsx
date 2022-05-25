@@ -1,6 +1,6 @@
 import React from 'react';
 
-const HomePage = () => {
+const CurrencyPage = () => {
   const a = 0;
 
   return (
@@ -9,7 +9,7 @@ const HomePage = () => {
         <div className="row">
           <div className="col-xs-12">
             <div className="box">
-              <h1 className="page__title">Home Page</h1>
+              <h1 className="page__title">Currency Page</h1>
             </div>
           </div>
         </div>
@@ -18,4 +18,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default CurrencyPage;

@@ -6,6 +6,8 @@ import {
 import Header from './components/Header/Header';
 import Page404 from './Pages/404/Page404';
 import HomePage from './Pages/Home/HomePage';
+import CurrencyPage from './Pages/CurrencyPage/CurrencyPage';
+import ConverterPage from './Pages/ConverterPage/ConverterPage';
 
 const App = () => (
   <Router>
@@ -18,6 +20,18 @@ const App = () => (
       <Route
         path="/home"
         element={<HomePage />}
+      />
+      <Route
+        path="/currencies"
+        element={<HomePage />}
+      />
+      <Route
+        path="/currencies/:name"
+        element={<CurrencyPage />}
+      />
+      <Route
+        path="/currencies/converter"
+        element={<ConverterPage />}
       />
       <Route
         path="404"

@@ -13,7 +13,13 @@ const Header = () => (
         className={({ isActive }) => getActiveClassName(isActive)}
         to="/"
       >
-        Home
+        All currencies
+      </NavLink>
+      <NavLink
+        className={({ isActive }) => getActiveClassName(isActive)}
+        to="/currencies/converter"
+      >
+        Currency Converter
       </NavLink>
     </nav>
   </header>
