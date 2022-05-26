@@ -9,7 +9,7 @@ type CurrencyBoxProps = {
 const CurrencyBox = ({ code, value }: CurrencyBoxProps) => (
   <div className={styles.box}>
     <div className={`${styles.cell} ${styles.left}`}>
-      {code.toUpperCase()}
+      {code}
     </div>
     <div className={styles.cell}>
       {value.toFixed(4)}
