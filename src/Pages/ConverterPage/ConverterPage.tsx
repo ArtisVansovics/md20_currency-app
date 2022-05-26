@@ -8,15 +8,15 @@ const ConverterPage = () => {
 
   return (
     <div className="page">
-      <div className="container width-max">
+      <div className="container width-max height-max">
         <div className="row center-xs">
           <div className="col-xs-12 col-sm-10 col-md-8">
             <div className="box">
               <h1 className="page__title">Currency Converter</h1>
               {isLoading && <Loader />}
-              <Converter codes={data
-                && Object.entries(data).map((code) => code[0])}
-              />
+              {data && (
+                <Converter codes={Object.entries(data).map((code) => code[0])} />
+              )}
             </div>
           </div>
         </div>

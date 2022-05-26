@@ -1,8 +1,9 @@
 .box {
   display: flex;
-  flex-flow: row wrap;
+  flex-flow: column;
   justify-content: center;
-  gap: 16px;
+  align-items: center;
+  gap: 32px;
   width: 100%;
   border-radius: 20px 0;
   border: #F2AC57 4px solid;
@@ -12,8 +13,17 @@
   padding: 20px 15px;
 }
 
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  justify-content: center;
+  gap: 15px 10px;
+  width: 100%
+}
+
 .label {
   display: flex;
+  flex-flow: row wrap;
   align-items: center;
   gap: 10px;
 }
@@ -21,7 +31,10 @@
 .input {
   color: #488C18;
   background-color: #182614;
+  border-radius: 5px;
+  padding: 5px;
   border: none;
+  width: 100%;
 }
 
 .select {
@@ -30,4 +43,14 @@
   border-radius: 5px;
   box-shadow: none;
   padding: 5px 10px;
+}
+
+.result {
+  border-radius: 10px;
+  border: #8F9FA6 4px solid;
+  padding: 10px 20px;
+  background-color: #798C35;
+  color: #F2F0D5;
+  font-size: 20px;
+  width: 50%;
 }
