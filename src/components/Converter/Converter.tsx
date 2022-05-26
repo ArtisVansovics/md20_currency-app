@@ -10,7 +10,7 @@ const Converter = ({ codes }: ConverterProps) => {
   const [codeOne, setCodeOne] = useState('');
   const [codeTwo, setCodeTwo] = useState('');
   const [inputValue, setInputValue] = useState(1);
-  const codeArr = [codeOne.toLowerCase(), codeTwo.toLowerCase()];
+  const codeArr = [codeOne, codeTwo];
   const { data } = useGetExchangeRateQuery(codeArr);
 
   return (
@@ -33,7 +33,7 @@ const Converter = ({ codes }: ConverterProps) => {
               key={code}
               value={code}
             >
-              {code}
+              {code.toUpperCase()}
             </option>
           ))}
         </select>
@@ -56,7 +56,7 @@ const Converter = ({ codes }: ConverterProps) => {
               key={code}
               value={code}
             >
-              {code}
+              {code.toUpperCase()}
             </option>
           ))}
         </select>
@@ -74,7 +74,7 @@ const Converter = ({ codes }: ConverterProps) => {
       </label>
       <p>
         {`Result: ${data
-          ? (Number(data[codeTwo.toLowerCase()]) * inputValue).toFixed(2)
+          ? (Number(data[codeTwo]) * inputValue).toFixed(2)
           : 'Please select the currencies'}`}
       </p>
     </div>

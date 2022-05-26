@@ -14,7 +14,9 @@ const ConverterPage = () => {
             <div className="box">
               <h1 className="page__title">Currency Converter</h1>
               {isLoading && <Loader />}
-              <Converter codes={data && Object.entries(data).map((code) => code[0].toUpperCase())} />
+              <Converter codes={data
+                && Object.entries(data).map((code) => code[0])}
+              />
             </div>
           </div>
         </div>
